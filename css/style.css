@@ -66,6 +66,13 @@ img {
   height: auto;
 }
 
+.main-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black)
+}
+
 .button {
   font: inherit;
   font-size: inherit;
@@ -81,7 +88,8 @@ img {
   color: var(--basic-black);
 }
 
-.button-standart:hover, .button-standart:focus {
+.button-standart:hover,
+.button-standart:focus {
   background-color: var(--special-medium-grey);
 }
 
@@ -95,7 +103,8 @@ img {
   color: var(--basic-white);
 }
 
-.button-standart_aссented:hover, .button-standart_aссented:focus {
+.button-standart_aссented:hover,
+.button-standart_aссented:focus {
   background-color: var(--special-medium-red);
 }
 
@@ -114,7 +123,8 @@ img {
   background-color: var(--basic-red);
 }
 
-.button-order_red:focus, .button-order_red:hover  {
+.button-order_red:focus,
+.button-order_red:hover  {
   background-color: var(--special-medium-red);
 }
 
@@ -127,7 +137,8 @@ img {
   background-color: var(--basic-yellow);
 }
 
-.button-order_yellow:focus, .button-order_yellow:hover {
+.button-order_yellow:focus,
+.button-order_yellow:hover {
   background-color: var(--special-medium-yellow);
 }
 
@@ -139,7 +150,8 @@ img {
   background-color: var(--basic-green);
 }
 
-.button-order_green:focus, .button-order_green:hover {
+.button-order_green:focus,
+.button-order_green:hover {
   background-color: var(--special-medium-green);
 }
 
@@ -150,14 +162,6 @@ img {
 .button-order:active {
   color: var(--special-opacity-white);
 }
-
-h1 {
-  font-weight: 500;
-  font-size: 65px;
-  line-height: 55px;
-  color: var(--basic-black)
-}
-
 
 /*main-header*/
 
@@ -181,7 +185,10 @@ h1 {
     color: var(--basic-black);
 }
 
-.main-nav__link:hover, .main-nav__link:focus, .button-cart:hover, .button-cart:focus {
+.main-nav__link:hover,
+.main-nav__link:focus,
+.button-cart:hover,
+.button-cart:focus {
   color: var(--basic-red);
 }
 
@@ -254,7 +261,8 @@ h4 {
   opacity: 0.2;
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   opacity: 1;
 }
 
@@ -266,6 +274,10 @@ h4 {
 
 .contacts {
   line-height: 18px;
+  color: var(--basic-medium-grey);
+}
+
+.contact-phone {
   color: var(--basic-medium-grey);
 }
 
