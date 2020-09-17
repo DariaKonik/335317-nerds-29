@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-  	<header class="page-header">
+  <body class="page-body">
+  	<header class="main-header">
   		<nav class="main-nav">
   			<a class="main-logo" href="index.html">
           <img src="https://via.placeholder.com/160x66" alt="логотип компании Нёрдс" width="160" height="66">
         </a>
-  			<ul class="main-nav__list">
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="index.html#studio">Студия</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="index.html#clients">Клиенты</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Магазин</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="index.html#contacts">Контакты</a>
-          </li>
-  			</ul>
-  			<a class="cart" href="blank.html">Корзина</a>
+  			<div class="main-nav-wrapper">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#studio">Студия</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#clients">Клиенты</a>
+              </li>
+              <li class="main-nav__item main-nav__item_active">
+                Магазин
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  			<a class="button-cart" href="blank.html">Корзина</a>
   		</nav>
   	</header>
-  	<main>
+    <main class="container">
   		<p>Это пустая страница, тут ничего нет</p>
   	</main>
-    <footer class="page-footer">
+    <footer class="page-footer main-footer">
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="blank.html">Вконтакте</a>
+          <a class="social__button" href="blank.html">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="blank.html">Facebook</a>
+          <a class="social__button" href="blank.html">Facebook</a>
         </li>
          <li class="social__item">
-          <a class="social__link" href="blank.html">Instagramm</a>
+          <a class="social__button" href="blank.html">Instagramm</a>
         </li>
       </ul>
     </footer>

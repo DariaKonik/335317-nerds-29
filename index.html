@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-  	<header class="page-header">
+  <body class="page-body">
+  	<header class="main-header">
   		<nav class="main-nav">
   			<a class="main-logo"><img src="https://via.placeholder.com/160x66" alt="логотип компании Нёрдс" width="160" height="65"></a>
-  			<ul class="main-nav__list">
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="#studio">Студия</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="#clients">Клиенты</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Магазин</a>
-          </li>
-  				<li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты</a>
-          </li>
-  			</ul>
-  			<a class="cart" href="blank.html">Корзина</a>
+    		<div class="main-nav-wrapper">
+            <div class="container">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html#studio">Студия</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html#clients">Клиенты</a>
+                </li>
+                <li class="main-nav__item main-nav__item_active">
+                  <a class="main-nav__link" href="catalog.html">
+                  Магазин
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+  			<a class="button-cart" href="blank.html">Корзина</a>
   		</nav>
   	</header>
-  	<main>
-  		<h1 class="visually-hidden">Нёрдс - магазин готовых шаблонов</h1>
+  	<main class="container">
+  		<h1 class="main-title visually-hidden">Нёрдс - магазин готовых шаблонов</h1>
   		<section class="promo">
   			<h2>Долго, дорого, скрупулезно.</h2>
   			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<a class="button-standart button-standart_aссented" href="blank.html">Узнать больше</a>
+  			<a class="button button-standart button-standart_aссented" href="blank.html">Узнать больше</a>
   			<div class="slider__controls">
-  				<button class="slider__button slider__button_active" type="button">1</button>
-  				<button class="slider__button" type="button">2</button>
-  				<button class="slider__button" type="button">3</button>
+  				<button class="slider__button slider__button-first slider__button_active" type="button">1</button>
+  				<button class="slider__button slider__button-second" type="button">2</button>
+  				<button class="slider__button slider__button-third" type="button">3</button>
   			</div>
   		</section>
   		<section class="goods">
@@ -44,19 +52,19 @@
   					<h3>Веб-сайты</h3>
   					<img src="https://via.placeholder.com/300x146" alt="изображение компьютера" width="300" height="146">
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a  class="button_order" href="blank.html">Заказать</a>
+  					<a  class="button button-order button-order_red" href="blank.html">Заказать</a>
   				</li>
   				<li class="goods__item">
   					<h3>Приложения</h3>
   					<img src="https://via.placeholder.com/300x146" alt="изображение мобильного телефона" width="300" height="146">
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a class="button_order" href="blank.html">Заказать</a>
+  					<a class="button button-order button-order_green" href="blank.html">Заказать</a>
   				</li>
   				<li class="goods__item">
   					<h3>Презентации</h3>
   					<img src="https://via.placeholder.com/300x146" alt="изображение флипчарта" width="300" height="146">
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="button_order" href="blank.html">Заказать</a>
+  					<a class="button button-order  button-order_yellow" href="blank.html">Заказать</a>
   				</li>
   			</ul>
   		</section>
@@ -119,27 +127,27 @@
   		</section>
   		<section class="contacts" id="contacts">
 	  		<h2 class="visually-hidden">Контакты студии</h2>
-	  		<span>NЁRDS DESIGN STUDIO</span>
+	  		<span class="contacts__studio-name">NЁRDS DESIGN STUDIO</span>
 	  		<p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
 	  		<a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-	  		<a class="button-standart button-standart_aссented" href="blank.html">Напишите нам</a>
+	  		<a class="button button-standart button-standart_aссented" href="blank.html">Напишите нам</a>
 	  		<img class="contacts__map" src="https://via.placeholder.com/1440x416" alt="карта подъезда к студии" width="1440" height="416">
   		</section>
   	</main>
-  	<footer class="page-footer">
+  	<footer class="page-footer main-footer">
   		<h2>Давайте дружить, это выгодно!</h2>
   		<p>Скидка 10% для друзей из социальных сетей.</p>
 	  	<ul class="social__list">
-	  		<li class="social__item">
-	  			<a class="social__link" href="blank.html">Вконтакте</a>
-	  		</li>
-	  		<li class="social__item">
-	  			<a class="social__link" href="blank.html">Facebook</a>
-	  		</li>
-	  		 <li class="social__item">
-          <a class="social__link" href="blank.html">Instagramm</a>
+        <li class="social__item">
+          <a class="social__button" href="blank.html">Вконтакте</a>
         </li>
-	  	</ul>
+        <li class="social__item">
+          <a class="social__button" href="blank.html">Facebook</a>
+        </li>
+         <li class="social__item">
+          <a class="social__button" href="blank.html">Instagramm</a>
+        </li>
+      </ul>
   	</footer>
   </body>
 </html>
