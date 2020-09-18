@@ -21,6 +21,7 @@
   --basic-medium-black: #444444;
   --basic-medium-grey: #666666;
   --special-opacity-black:  rgba(0,0,0,0.3);
+  --special-opacity-black-darker: rgba(0,0,0,0.6);
   --special-opacity-white: rgba(255,255,255,0.3);
 
 /*дополнительные цвета фон для элементов*/
@@ -30,7 +31,7 @@
   --basic-grey:  #A6A6A6;
   --basic-catalog-grey:  #4D4D4D;
   --basic-social-grey: #E1E1E1;
-  --basic-top_and_down_buttons-black: #231F20;
+  --basic-arrow_buttons-black: #231F20;
 
   --special-medium-red: #E74246;
   --special-dark-red: #D7373B;
@@ -42,6 +43,7 @@
   --special-dark-grey: #D5D5D5;
   --special-pagination-border-grey: #DBDBDB;
 
+  --background-image-color: #F2F2F2;
   --button-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -70,8 +72,10 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
+
+/*button*/
 
 .button {
   font: inherit;
@@ -162,6 +166,70 @@ img {
 .button-order:active {
   color: var(--special-opacity-white);
 }
+
+.slider__button {
+  background-color: var(--basic-white);
+}
+
+/*catalog button*/
+
+.button-add-to-cart {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.button-add-to-cart:hover, .button-add-to-cart:focus {
+  background-color: var(--special-medium-red);
+}
+
+.button-add-to-cart:active {
+  background-color: var(--special-dark-red);
+}
+
+.sort-button-item {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-button-item :hover, .sort-button-item :focus {
+  color: var(--special-opacity-black-darker);
+}
+
+.sort-button-item :active {
+   color: var(--special-opacity-black);
+}
+
+.sort-button__arrow  {
+  color: var(--basic-grey);
+  opacity: 0.2;
+}
+
+.sort-button__arrow:hover, .sort-button__arrow:focus {
+  color: var(--basic-grey);
+}
+
+.sort-button__arrow:active {
+  color: (--basic-arrow_buttons-black);
+}
+
+.pagination__button {
+  background-color: var(--basic-light-grey);
+}
+
+.pagination__button:hover, .pagination__button:focus {
+  background-color: var(--special-medium-grey);
+}
+
+.pagination__button:active {
+  background-color: var(--special-dark-grey);
+}
+
+.pagination__item_current {
+  background-color: var(--basic-white);
+  border: 3px solid var(--special-pagination-border-grey);
+}
+
 
 /*main-header*/
 
@@ -289,7 +357,9 @@ h4 {
 }
 
 /*footer*/
-
+.catalog__item {
+  background-color: var(--background-image-color);
+}
 .main-footer h2 {
   font-weight: bold;
   font-size: 36px;
@@ -304,4 +374,55 @@ h4 {
 
 .social__list {
   list-style: none;
+}
+
+/*catalog*/
+.catalog__list {
+  list-style: none;
+}
+
+.browser-panel__decor-items {
+  list-style: none;
+}
+
+.sort-label {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog__item-description {
+  background-color: var(--basic-light-grey);
+  line-height: 18px;
+  color: var(--basic-medium-grey);
+}
+
+.link-to-project {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.link-to-project:hover, .link-to-project:focus {
+  color: var(--basic-red);
+}
+
+.link-to-project:active {
+  color: var(--special-opacity-black);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.browser-panel {
+  background-color: var(--basic-catalog-grey);
+  opacity: 0.12;
+}
+
+.browser-panel:hover, .browser-panel:focus {
+    opacity: 1;
 }
