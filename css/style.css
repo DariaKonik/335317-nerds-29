@@ -294,6 +294,7 @@ font-weight: 500;
 font-size: 45px;
 line-height: 45px;
 color: var(--basic-black);
+text-transform: none;
 }
 
 h4 {
