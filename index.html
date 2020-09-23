@@ -11,94 +11,90 @@
   		<nav class="main-nav">
   			<a class="main-logo"><img src="img/nerds-logo.svg" alt="логотип компании Нёрдс" width="160" height="65"></a>
     		<div class="main-nav-wrapper">
-            <div class="container">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html#studio">Студия</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html#clients">Клиенты</a>
-                </li>
-                <li class="main-nav__item main-nav__item_active">
-                  <a class="main-nav__link" href="catalog.html">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#studio">Студия</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#clients">Клиенты</a>
+              </li>
+              <li class="main-nav__item main-nav__item_active">
+                <a class="main-nav__link" href="catalog.html">
                   Магазин
                   </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html#contacts">Контакты</a>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html#contacts">Контакты</a>
+              </li>
+            </ul>
         </div>
-  			<a class="button-cart" href="blank.html">Корзина</a>
+        <div class="button-cart-wrapper">
+  			   <a class="button-cart" href="blank.html">Корзина</a>
+        </div>
   		</nav>
   	</header>
   	<main class="container">
   		<h1 class="main-title visually-hidden">Нёрдс - магазин готовых шаблонов</h1>
-  		<section class="promo">
-  			<h2>Долго, дорого, скрупулезно.</h2>
-  			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<a class="button button-standart button-standart_aссented" href="blank.html">Узнать больше</a>
-  			<div class="slider__controls">
-  				<button class="button slider__button slider__button-first slider__button_active" type="button">1</button>
-  				<button class="button slider__button slider__button-second" type="button">2</button>
-  				<button class="button slider__button slider__button-third" type="button">3</button>
-  			</div>
-  		</section>
+    		<section class="promo">
+    			<h2>Долго, дорого, скрупулезно.</h2>
+    			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+    			<a class="button button-standart button-standart_aссented" href="blank.html">Узнать больше</a>
+    			<div class="slider__controls">
+    				<button class="button slider__button slider__button-first slider__button_active" type="button">1</button>
+    				<button class="button slider__button slider__button-second" type="button">2</button>
+    				<button class="button slider__button slider__button-third" type="button">3</button>
+    			</div>
+    		</section>
   		<section class="goods">
   			<h2 class="visually-hidden">Продукты компании Нёрдс</h2>
   			<ul class="goods__list">
   				<li class="goods__item">
   					<h3>Веб-сайты</h3>
-  					<img src="img/illustration-1.jpg" alt="ноутбук на красном фоне, на экране ноутбука - веб-сайт" width="300" height="146">
+  					<img class="goods__image" src="img/illustration-1.jpg" alt="ноутбук на красном фоне, на экране ноутбука - веб-сайт" width="300" height="146">
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<a  class="button button-order button-order_red" href="blank.html">Заказать</a>
   				</li>
   				<li class="goods__item">
   					<h3>Приложения</h3>
-  					<img src="img/illustration-2.jpg" alt="два смартфона на зеленом фоне, на экране смартфонов - открытое приложение" width="300" height="146">
+  					<img class="goods__image" src="img/illustration-2.jpg" alt="два смартфона на зеленом фоне, на экране смартфонов - открытое приложение" width="300" height="146">
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
   					<a class="button button-order button-order_green" href="blank.html">Заказать</a>
   				</li>
   				<li class="goods__item">
   					<h3>Презентации</h3>
-  					<img src="img/illustration-3.jpg" alt="флипчарт на желтом фоне, на флипчарте столбчатые диаграммы" width="300" height="146">
+  					<img class="goods__image" src="img/illustration-3.jpg" alt="флипчарт на желтом фоне, на флипчарте столбчатые диаграммы" width="300" height="146">
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="button button-order  button-order_yellow" href="blank.html">Заказать</a>
+  					<a class="button button-order button-order_yellow" href="blank.html">Заказать</a>
   				</li>
   			</ul>
   		</section>
   		<section class="studio" id="studio">
   			<h2 class="visually-hidden">О студии Нёрдс</h2>
-  			<section class="about-studio">
-	  			<h3 class="about-studio__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-	  			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-	  			<h4>Выполняем заказы на разработку:</h4>
-	  			<ul class="about-studio__list">
-	  				<li class="about-studio__item">Веб-сайтов любой сложности</li>
-	  				<li class="about-studio__item">Мобильных приложений для iOS и Android</li>
-	  				<li class="about-studio__item">Слайдшоу и видео для корпоративных презентаций</li>
-	  			</ul>
-	  		</section>
-	  		<section class="features">
-	  			<h3 class="visually-hidden">Наши преимущества</h3>
-	  			<img class="logo-content" src="img/nerds-illustration.png" alt="логотип компании Нёрдс на разноцветном абстрактном фоне" width="360" height="208">
-	  			<h4>с 2004 года Любим точность во всем:</h4>
-	  			<dl class="features__list">
-	  				<div class="features__item">
-			  			<dt>146%</dt>
-			  			<dd>Уровень самоотдачи</dd>
-			  		</div>
-			  		<div class="features__item">
-		  				<dt>100%</dt>
-			  			<dd>Соблюдение сроков</dd>
-			  		</div>
-			  		<div class="features__item">
-		  				<dt>50%</dt>
-			  			<dd>Минимальная предоплата</dd>
-			  		</div>
-	  			</dl>
-	  		</section>
+        <div class="about-studio-wrapper">
+    			<section class="about-studio">
+  	  			<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+  	  			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+  	  			<h4>Выполняем заказы на разработку:</h4>
+  	  			<ul class="about-studio__list">
+  	  				<li class="about-studio__item">Веб-сайтов любой сложности</li>
+  	  				<li class="about-studio__item">Мобильных приложений для iOS и Android</li>
+  	  				<li class="about-studio__item">Слайдшоу и видео для корпоративных презентаций</li>
+  	  			</ul>
+  	  		</section>
+  	  		<section class="features">
+  	  			<h3 class="visually-hidden">Наши преимущества</h3>
+  	  			<img class="logo-content" src="img/nerds-illustration.png" alt="логотип компании Нёрдс на разноцветном абстрактном фоне" width="360" height="208">
+  	  			<h4>с 2004 года Любим точность во всем:</h4>
+  	  			<dl class="features__list">
+  			  			<dt class="features__value">146<sup>%</sup></dt>
+  			  			<dd class="features__description">Уровень самоотдачи</dd>
+  		  				<dt class="features__value">100<sup>%</sup></dt>
+  			  			<dd class="features__description">Соблюдение сроков</dd>
+  		  				<dt class="features__value">50<sup>%</sup></dt>
+  			  			<dd class="features__description">Минимальная предоплата</dd>
+  	  			</dl>
+  	  		</section>
+        </div>
   		</section>
   		<section id="clients" class="clients">
   			<h2 class="visually-hidden">Клиенты студии</h2>
@@ -134,20 +130,26 @@
 	  		<img class="contacts__map" src="img/map.jpg" alt="фрагмент карты города Санкт-Петербург, улица Большая Конюшенная" width="1440" height="416">
   		</section>
   	</main>
-  	<footer class="page-footer main-footer">
-  		<h2>Давайте дружить, это выгодно!</h2>
-  		<p>Скидка 10% для друзей из социальных сетей.</p>
-	  	<ul class="social__list">
-        <li class="social__item">
-          <a class="social__button" href="blank.html">Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="blank.html">Facebook</a>
-        </li>
-         <li class="social__item">
-          <a class="social__button" href="blank.html">Instagramm</a>
-        </li>
-      </ul>
+  	<footer class="page-footer">
+      <div class="container">
+        <div class="grid-wrapper">
+          <div class="page-footer__column-text">
+        		<h2>Давайте дружить, это выгодно!</h2>
+        		<p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+    	  	<ul class="social__list">
+            <li class="social__item">
+              <a class="social__button" href="blank.html">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__button" href="blank.html">Facebook</a>
+            </li>
+             <li class="social__item">
+              <a class="social__button" href="blank.html">Instagramm</a>
+            </li>
+          </ul>
+        </div>
+      </div>
   	</footer>
   </body>
 </html>
