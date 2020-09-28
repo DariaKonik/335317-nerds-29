@@ -584,17 +584,17 @@ img {
   color: var(--special-opacity-black);
 }
 
-.button-standart_aссented {
+.button-standart--aссented {
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
 
-.button-standart_aссented:hover,
-.button-standart_aссented:focus {
+.button-standart--aссented:hover,
+.button-standart--aссented:focus {
   background-color: var(--special-medium-red);
 }
 
-.button-standart_aссented:active {
+.button-standart--aссented:active {
   background-color: var(----special-dark-red);
   color: var(--special-opacity-white);
 }
@@ -605,43 +605,43 @@ img {
   color: var(--basic-white);
 }
 
-.button-order_red {
+.button-order--red {
   background-color: var(--basic-red);
 }
 
-.button-order_red:focus,
-.button-order_red:hover  {
+.button-order--red:focus,
+.button-order--red:hover  {
   background-color: var(--special-medium-red);
 }
 
-.button-order_red:active {
+.button-order--red:active {
   background-color: var(----special-dark-red);
   color: var(--special-opacity-white);
 }
 
-.button-order_yellow {
+.button-order--yellow {
   background-color: var(--basic-yellow);
 }
 
-.button-order_yellow:focus,
-.button-order_yellow:hover {
+.button-order--yellow:focus,
+.button-order--yellow:hover {
   background-color: var(--special-medium-yellow);
 }
 
-.button-order_yellow:active {
+.button-order--yellow:active {
   background-color: var(--special-dark-yellow);
 }
 
-.button-order_green {
+.button-order--green {
   background-color: var(--basic-green);
 }
 
-.button-order_green:focus,
-.button-order_green:hover {
+.button-order--green:focus,
+.button-order--green:hover {
   background-color: var(--special-medium-green);
 }
 
-.button-order_green:active {
+.button-order--green:active {
  background-color: var(--special-dark-green);
 }
 
@@ -709,7 +709,7 @@ img {
   background-color: var(--special-dark-grey);
 }
 
-.pagination__item_current {
+.pagination__item--current {
   background-color: var(--basic-white);
   border: 3px solid var(--special-pagination-border-grey);
 }
