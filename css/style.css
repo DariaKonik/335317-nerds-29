@@ -288,6 +288,8 @@ img {
 }
 
 .about-studio__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   }
 
@@ -367,10 +369,10 @@ img {
 
 /*Clients*/
 
+/* работает, но кажется что добавлять дополнительные падинги элементам кажется странным
+*/
 .clients {
-  margin-bottom: 80px;
-  border-top: 3px solid grey;
-  border-bottom: 3px solid grey;
+  margin-bottom: 60px;
 }
 
 .clients__list {
@@ -380,45 +382,82 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .clients__item {
-  padding-bottom: 44px;
-  padding-top: 44px;
-  border-right: solid grey 2px;
-  text-align: center;
+  width: 300px;
+  min-height: 186px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.clients__item:nth-child(4n), .clients__item:nth-child(4n+1) {
+   width: 280px;
+   padding-top: 20px;
+}
+
+.clients__item:nth-child(4n+1) {
+  padding-right: 15px;
 }
 
 .clients__item:nth-child(4n) {
-  border-right: none;
+  padding-left: 20px;
 }
 
 
-/*
-.clients {
-  padding-bottom: 44px;
-  padding-top: 44px;
-  border-top: 3px solid grey;
-  border-bottom: 3px solid grey;
-  box-sizing: border-box;
-}
-
-
+/* кажется, что должно выравниваться так, но это не так:
 .clients__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .clients__item {
-  margin-right: 65px;
-  margin-left: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-bottom: 44px;
+  padding-top: 44px;
 }
 */
+
+
+/* кажется, что должно выравниваться так#2, но это не так тоже:
+.clients__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clients__item {
+  padding-bottom: 44px;
+  padding-top: 44px;
+  text-align: center;
+}
+
+.clients__item {
+  width: 300px;
+}
+
+.clients__item:nth-child(4n), .clients__item:nth-child(4n+1) {
+   width: 280px;
+}
+*/
+
+
+
 
 .clients__link {
   opacity: 0.2;
