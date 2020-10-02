@@ -48,7 +48,7 @@
 }
 
 body {
-  min-width: 1400px;
+  min-width: 1200px;
   padding: 0;
   margin: 0;
   font-family: "Roboto", Arial, sana-serif;
@@ -75,26 +75,15 @@ img {
 }
 
 .first-section-wrapper {
-  padding-top: 78px;
   position: relative;
+  padding-top: 78px;
   background-color: var(--basic-light-grey);
-}
-
-.first-section-wrapper:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -9995px;
-  right: 0;
-  border-left: 9999px solid var(--basic-light-grey);
-  box-shadow: 9999px 0 0 var(--basic-light-grey);
-  z-index: -1;
 }
 
 .main-title {
   padding-bottom: 108px;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -127,10 +116,15 @@ img {
 /*Main-header*/
 
 .main-header {
-  padding-top: 50px;
+  padding-top: 49px;
+  background-color: var(--basic-light-grey);
 }
 
 .main-nav {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,6 +145,7 @@ img {
 .main-nav__list {
   padding: 0;
   margin: 0;
+  list-style: none;
   width: 437px;
   display: flex;
   flex-wrap: wrap;
@@ -161,25 +156,16 @@ img {
 }
 
 .main-nav__item:nth-child(4n) {
-   margin-right: 0;
+  margin-right: 0;
 }
 
-.main-header {
-  background-color: var(--basic-light-grey);
-
+.main-nav-wrapper {
+  margin-top: 17px;
+  width: 68.8%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-nav {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-
-.main-nav__list {
-  list-style: none;
-}
 
 .main-nav__link, .button-cart {
   color: var(--basic-black);
@@ -263,8 +249,8 @@ img {
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 30px;
-  text-transform: uppercase;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .goods p {
@@ -279,6 +265,8 @@ img {
 .studio {
   padding-top:  73px;
   padding-bottom: 73px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 .about-studio-wrapper {
@@ -308,52 +296,52 @@ img {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  text-transform: none;
   color: var(--basic-black);
+}
+
+.about-studio p {
+  margin: 0 0 40px;
 }
 
 .studio h4 {
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 23px;
-  font-size: 16px;
-  line-height: 24px;
   text-transform: uppercase;
 }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: -35px;
+}
+
 .features h4 {
-  margin-top: -5px;
+  margin-top: 36px;
   margin-bottom: 31px;
   text-align: center;
   color: var(--basic-black);
-}
-
-.features {
-  position: relative;
 }
 
 .features__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.features__item {
-  width: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .features__value {
-  font-size: 45px;
-  line-height: 64px;
-  font-weight: 700;
-  color: var(--basic-black);
+ font-size: 45px;
+ line-height: 64px;
+ font-weight: 700;
+ color: var(--basic-black);
+ grid-row-start: 1;
+ grid-row-end: 2;
 }
 
 .features__description {
-  line-height: 18px;
   margin: 10px 0 0;
+  line-height: 18px;
 }
 
 .features__value sup {
@@ -361,18 +349,11 @@ img {
   line-height: 40px;
 }
 
-.features__image {
-  position: relative;
-  top: -34px;
-}
-
 
 /*Clients*/
 
-/* работает, но кажется что добавлять дополнительные падинги элементам кажется странным
-*/
 .clients {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .clients__list {
@@ -382,20 +363,18 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  border-bottom: 2px solid grey;
+  box-sizing: border-box;
 }
 
 .clients__item {
   width: 300px;
-  min-height: 186px;
+  min-height: 180px;
   padding-top: 10px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  box-sizing: border-box;
 }
 
 .clients__item:nth-child(4n), .clients__item:nth-child(4n+1) {
@@ -410,54 +389,6 @@ img {
 .clients__item:nth-child(4n) {
   padding-left: 20px;
 }
-
-
-/* кажется, что должно выравниваться так, но это не так:
-.clients__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.clients__item {
-  padding-bottom: 44px;
-  padding-top: 44px;
-}
-*/
-
-
-/* кажется, что должно выравниваться так#2, но это не так тоже:
-.clients__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.clients__item {
-  padding-bottom: 44px;
-  padding-top: 44px;
-  text-align: center;
-}
-
-.clients__item {
-  width: 300px;
-}
-
-.clients__item:nth-child(4n), .clients__item:nth-child(4n+1) {
-   width: 280px;
-}
-*/
-
-
-
 
 .clients__link {
   opacity: 0.2;
@@ -490,17 +421,15 @@ img {
 
 .contacts__text-frame {
   position: absolute;
-  box-sizing: border-box;
   top: 54px;
   left: calc((100% - 1160px)/2);
   width: auto;
   height: auto;
   padding: 49px 50px 47px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--basic-white);
-}
-
-.contact-phone {
-  color: var(--basic-medium-grey);
+  box-sizing: border-box;
 }
 
 .contacts__studio-name {
@@ -511,6 +440,15 @@ img {
   color: var(--basic-black);
 }
 
+.contacts__text-frame p {
+  margin: 0 0 18px;
+}
+
+.contact-phone {
+  margin: 0 0 37px;
+  color: var(--basic-medium-grey);
+}
+
 .footer-bottom .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -519,15 +457,16 @@ img {
 }
 
 .social__list {
+  width: 261px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.social__list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-}
-
-.footer-bottom .social__list {
-  grid-column-start: 1;
-  grid-row-start: 1;
 }
 
 .footer-bottom h3 {
@@ -539,20 +478,23 @@ img {
 }
 
 .footer-bottom p {
-  font-size: 16px;
+  margin: 0;
   line-height: 22px;
   color: var(--basic-medium-black);
 }
 
 
 /*Catalog*/
+.catalog-main-title {
+  margin-bottom: 55px;
+  text-align: center;
+}
 
 .catalog {
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 260px 3fr;
   align-content: start;
-  /*grid-template-rows: min-content 1fr min-content;*/
   column-gap: 140px;
 }
 
@@ -579,6 +521,14 @@ img {
   row-gap: 30px;
 }
 
+.catalog__item {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-image-color);
+}
+
 .pagination {
   grid-column-start: 2;
   display: flex;
@@ -593,21 +543,21 @@ img {
   align-items: center;
 }
 
-.catalog-main-title {
-  text-align: center;
-}
-
 .sort-label {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-.catalog__item {
-  min-height: 618px;
-  background-color: var(--background-image-color);
+.browser-panel {
+  width: 100%;
+  height: 40px;
+  order: 1;
+  background-color: var(--basic-catalog-grey);
+  opacity: 0.12;
 }
 
 .browser-panel__decor-items {
@@ -616,11 +566,31 @@ img {
   list-style: none;
 }
 
+.catalog__item-image {
+  order: 2;
+}
+
 .catalog__item-description {
-  display: none; /*временно для разметки*/
+  position: absolute;
+  top: 389px;
+  width: 100%;
+  min-height: 231px;
   line-height: 18px;
+  text-align: center;
   color: var(--basic-medium-grey);
   background-color: var(--basic-light-grey);
+}
+
+.catalog__item-description h3 {
+  margin-top: 26px;
+  margin-bottom: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog__item-description p {
+  margin: 0 auto 33px;
+  width: 180px;
 }
 
 .link-to-project {
@@ -636,11 +606,6 @@ img {
 
 .link-to-project:active {
   color: var(--special-opacity-black);
-}
-
-.browser-panel {
-  background-color: var(--basic-catalog-grey);
-  opacity: 0.12;
 }
 
 .browser-panel:hover, .browser-panel:focus {
@@ -659,9 +624,10 @@ img {
   text-align: center;
   vertical-align: middle;
   border: none;
+  box-sizing: border-box;
 }
 
-.button-standart, .button-order {
+.button-standart, .button-order, .button-add-to-cart {
   padding: 17px 54px 15px;
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
@@ -694,7 +660,7 @@ img {
 
 .button-order {
   width: 160px;
-  padding: 17px 0;
+  padding: 17px 39px 17px 40px;
   color: var(--basic-white);
 }
 
@@ -750,6 +716,7 @@ img {
 /*catalog button*/
 
 .button-add-to-cart {
+  width: 200px;
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
