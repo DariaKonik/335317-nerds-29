@@ -24,7 +24,7 @@
               <a class="main-nav__link" href="index.html#clients">Клиенты</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__item--active" href="catalog.html">
                 Магазин
               </a>
             </li>
@@ -32,23 +32,43 @@
               <a class="main-nav__link" href="index.html#contacts">Контакты</a>
             </li>
           </ul>
-  			  <a class="button-cart" href="blank.html">Корзина</a>
+          <div class="button-cart  button-cart--active">
+  			     <a class="button-cart__link" href="blank.html">Корзина</a>
+          </div>
         </div>
   		</nav>
   	</header>
   	<main class="main-content">
-      <div class="first-section-wrapper">
+      <div class="first-section-wrapper promo-wrapper-1">
     		<h1 class="main-title visually-hidden">Нёрдс - магазин готовых шаблонов</h1>
       		<section class="promo container">
-            <div class="promo__content">
-        			<h2>Долго, дорого, скрупулезно.</h2>
-        			<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-        		  <a class="button button-standart button-standart--aссented" href="blank.html">Узнать больше</a>
-            </div>
-      			<div class="slider-controls">
-        		  <button class="button slider-controls__button slider-controls__button--active" type="button">1</button>
-        		  <button class="button slider-controls__button" type="button">2</button>
-        			<button class="button slider-controls__button" type="button">3</button>
+            <ul class="promo__slider-list slider__list">
+              <li class="slider__item slide slider__item--current">
+                <div class="slide__content">
+            			<h2 class="slide__title slide__title--narrow-space">Долго, дорого, скрупулезно.</h2>
+            			<p class="slide__text--wide-space">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+            		  <a class="button button-standart button--aссented" href="blank.html">Узнать больше</a>
+                </div>
+              </li>
+              <li class="slider__item slide">
+                <div class="slide__content">
+                  <h2 class="slide__title">Любим математику как никто другой.</h2>
+                  <p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="button button-standart button--aссented" href="blank.html">Узнать больше</a>
+                </div>
+              </li>
+              <li class="slider__item slide">
+                <div class="slide__content">
+                  <h2 class="slide__title">Только ночь,<br>только хардкор</h2>
+                  <p class="slide__text" >Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                  <a class="button button-standart button--aссented" href="blank.html">Узнать больше</a>
+                </div>
+              </li>
+            </ul>
+      			<div class="promo__slider-controls slider-controls">
+        		  <button class="button slider-controls__button slider-controls__button--active" type="button" aria-label="Первый слайд"></button>
+        		  <button class="button slider-controls__button" type="button" aria-label="Второй слайд"></button>
+        			<button class="button slider-controls__button" type="button" aria-label="Третий слайд"></button>
       			</div>
       		</section>
         </div>
@@ -64,7 +84,7 @@
   				<li class="goods__item">
   					<h3>Приложения</h3>
   					<img class="goods__image" src="img/illustration-2.jpg" alt="два смартфона на зеленом фоне, на экране смартфонов - открытое приложение" width="300" height="146">
-  					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+  					<p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
   					<a class="button button-order button-order--green" href="blank.html">Заказать</a>
   				</li>
   				<li class="goods__item">
@@ -136,9 +156,9 @@
           <h3 class="contacts__studio-name">NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="button button-standart button-standart--aссented " href="blank.html">Напишите нам</a>
+          <a class="button button-contacts button--aссented" href="blank.html">Напишите нам</a>
       </section>
-      <img class="contacts__map" src="img/map.jpg" alt="фрагмент карты города Санкт-Петербург, улица Большая Конюшенная" width="1440" height="416">
+      <img class="contacts__map" src="img/map.jpg" alt="Офис компании Нёрдс, улица Большая Конюшенная, д. 19/8, Санкт-Петербург" width="1440" height="416">
       </section>
       <section class="footer-bottom container">
         <h2 class="visually-hidden">Контакты студии Нёрдс в социальных сетях</h2>
@@ -149,23 +169,47 @@
           </div>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__button" href="blank.html">
+              <a class="social__link" href="blank.html">
                 <span class="visually-hidden">Вконтакте</span>
+                <img class="social__icon" src="img/vk-icon.svg" alt="логотип Вконтакте" width="27" height="15">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__button" href="blank.html">
+              <a class="social__link" href="blank.html">
                 <span class="visually-hidden">Facebook</span>
+                <img class="social__icon"src="img/fb-icon.svg" alt="логотип Вконтакте" width="12" height="22">
              </a>
             </li>
              <li class="social__item">
-              <a class="social__button" href="blank.html">
+              <a class="social__link" href="blank.html">
                 <span class="visually-hidden">Instagramm</span>
+                <img class="social__icon" src="img/insta-icon.svg" alt="логотип Вконтакте" width="21" height="21">
               </a>
             </li>
           </ul>
         </div>
       </section>
     </footer>
+    <section class="modal modal-question">
+      <header class="modal-header">
+        <h2>Напишите нам</h2>
+        <button class="button modal-close" type="button" text-area="закрыть окно"></button>
+      </header>
+      <form class="modal-question__form">
+        <div class="modal-question__item">
+          <label for="modal-question__user-name">Ваше имя:</label>
+          <input id="modal-question__user-name" type="text" name="modal-question__user-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal-question__item">
+          <label for="modal-question__user-email">Ваш email:</label>
+          <input id="modal-question__user-email" type="text" name="modal-question__user-email" placeholder="email@example.com">
+        </div>
+        <div class="modal-question__item modal-question__item--big">
+          <label for="modal-question__user-question">Текст письма:</label>
+          <textarea id="modal-question__user-question" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button--aссented modal-question__button" type="subbmit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
