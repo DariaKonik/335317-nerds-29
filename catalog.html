@@ -24,7 +24,7 @@
               <a class="main-nav__link" href="index.html#clients">Клиенты</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              Магазин
+              <span>Магазин</span>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html#contacts">Контакты</a>
@@ -55,19 +55,90 @@
       				<button class="button sort-button__arrow sort-button__arrow--active sort-button__top-down" type="button">
                 <span class="visually-hidden">По убыванию</span>
                 <svg class="arrow-top-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                  <path d="M5.5 10L0 0H11"/>
                 </svg>
               </button>
       				<button class="button sort-button__arrow sort-button__down-top" type="button">
                 <span class="visually-hidden">По возрастанию</span>
                 <svg class="arrow-down-top" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
               </button>
-              </div>
           </div>
   			</header>
         <form class="catalog__filter">
+          <fieldset class="catalog-filter__item">
+            <legend class="catalog-filter__first-title sort-label">Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 70%;
+                    margin-left: 0%;
+                  ">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  margin-left: 0%;
+                ">
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  margin-left: 55%;
+                ">
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter__item">
+            <legend class="catalog-filter__title sort-label">Сетка:</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-radio" id="adaptive-layout" type="radio" name="layout-filter" value="adaptive-layout" checked>
+                <label for="adaptive-layout">Адаптивная</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-radio" id="fix-layout" type="radio" name="layout-filter" value="fix-layout">
+                <label for="fix-layout">Фиксированная</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-radio" id="responsive-layout" type="radio" name="layout-filter" value="responsive-layout">
+                <label for="responsive-layout">Резиновая</label>
+              </li>
+          </fieldset>
+          <fieldset class="catalog-filter__item">
+            <legend class="catalog-filter__title sort-label">Особенности:</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-checkbox" type="checkbox" name="slider-filter" id="slider-filter">
+                <label for="slider-filter" checked>Слайдер</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-checkbox" type="checkbox" name="block-features-filter" id="block-features-filter">
+                <label for="block-features-filter">Блок преимуществ</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-checkbox" type="checkbox" name="news-filter" id="news-filter">
+                <label for="news-filter" checked>Новости</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-checkbox" type="checkbox" name="galery-filter" id="galery-filter">
+                <label for="galery-filter">Галерея</label>
+              </li>
+              <li class="catalog-filter__option">
+                <input class="visually-hidden catalog-filter__input-checkbox" type="checkbox" name="cart-filter" id="cart-filter">
+                <label for="cart-filter">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button-standart catalog-filter__button-submit" type="submit">Показать</button>
         </form>
   			<ul class="catalog__list">
   				<li class="catalog__item">
@@ -84,7 +155,7 @@
                 <a class="link-to-project" href="blank.html">Sedona</a>
               </h3>
   						<p>Информационный сайт для туристов</p>
-  						<button class="button button--accented button-add-to-cart" type="button">9 900 ₽</button>
+  						<button class="button button--aссented button-add-to-cart" type="button">9 900 ₽</button>
   					</div>
   				</li>
   				<li class="catalog__item">
