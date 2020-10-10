@@ -780,6 +780,7 @@ img {
   top: 389px;
   width: 100%;
   min-height: 231px;
+  display: none;
   line-height: 18px;
   text-align: center;
   color: var(--basic-medium-grey);
@@ -796,7 +797,11 @@ img {
 
 .catalog__item-description p {
   margin: 0 auto 33px;
-  width: 180px;
+  width: 255px;
+}
+
+.catalog__item-description--active {
+  display: block;
 }
 
 .link-to-project {
