@@ -38,7 +38,9 @@
     </header>
     <main class="main-content">
       <div class="first-section-wrapper">
-        <h1 class="main-title catalog-main-title">Магазин готовых шаблонов</h1>
+        <div class="container">
+          <h1 class="main-title catalog-main-title">Магазин готовых шаблонов</h1>
+        </div>
       </div>
       <section class="catalog container">
         <header class="catalog__header">
@@ -88,11 +90,11 @@
                 </div>
               </div>
               <div class="price-controls">
-                <label class="min-price">
-                от <input type="number" name="min-price" value="0">
+                <label class="price-controls__label min-price">
+                от <input class="price-controls__input" type="number" name="min-price" value="0" min="0" max="15000">
                 </label>
-                <label class="max-price">
-                до <input type="number" name="max-price" value="15000">
+                <label class="price-controls__label max-price">
+                до <input class="price-controls__input" type="number" name="max-price" value="15000" min="0" max="15000">
                 </label>
               </div>
             </div>
