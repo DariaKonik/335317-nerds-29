@@ -60,7 +60,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto", Arial, sana-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: var(--basic-dark-grey);
   background-color: var(--basic-white);
 }
@@ -1052,15 +1052,12 @@ img {
   border-radius: 3px;
 }
 
-
-/* Chrome, Safari, Edge, Opera */
 .price-controls__input::-webkit-outer-spin-button,
 .price-controls__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 .price-controls__input {
   -moz-appearance: textfield;
 }
