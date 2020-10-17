@@ -659,7 +659,7 @@ img {
 
 .catalog {
   display: grid;
-  grid-template-columns: 260px 3fr;
+  grid-template-columns: 1fr 3fr;
   align-content: start;
   column-gap: 140px;
   margin-bottom: 60px;
@@ -759,6 +759,7 @@ img {
 .sort-button__arrow:last-child {
   padding: 9px 0 9px 9px;
 }
+
 
 .browser-panel {
   order: 1;
