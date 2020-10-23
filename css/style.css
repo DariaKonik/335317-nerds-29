@@ -71,6 +71,7 @@ a {
 
 img {
   max-width: 100%;
+
 }
 
 .container {
@@ -439,25 +440,6 @@ img {
   color: var(--basic-black);
 }
 
-/*
-.features__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.features__value {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 64px;
-  color: var(--basic-black);
-}
-*/
-
 .features__list {
   display: flex;
   flex-wrap: wrap;
@@ -491,8 +473,6 @@ img {
 .features__image {
   object-fit: cover;
 }
-
-
 
 
 /*Clients*/
@@ -613,7 +593,7 @@ img {
 }
 
 .contact-phone {
-  margin: 0 0 40px;
+  margin: 0 0 37px;
   color: var(--basic-medium-grey);
 }
 
@@ -825,6 +805,8 @@ img {
 
 .catalog__item-image {
   width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .catalog__item-description {
