@@ -41,10 +41,10 @@
         <h1 class="main-title visually-hidden">Нёрдс - магазин готовых шаблонов</h1>
         <section class="promo container">
           <ul class="promo__slider-list slider__list">
-            <li class="slider__item slide slider__item--current">
+            <li class="slider__item  slider__item--current slide">
               <div class="slide__content">
                 <h2 class="slide__title slide__title--narrow-space">Долго, дорого, скрупулезно.</h2>
-                <p class="slide__text--wide-space">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <p class="slide__text slide__text--wide-space">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                 <a class="button button-standart button--aссented" href="blank.html">Узнать больше</a>
               </div>
             </li>
@@ -111,12 +111,18 @@
             <img class="features__image" src="img/nerds-illustration.png" alt="логотип компании Нёрдс на разноцветном абстрактном фоне" width="360" height="208">
             <h4>с 2004 года Любим точность во всем:</h4>
             <dl class="features__list">
-              <dt class="features__value">146<sup>%</sup></dt>
-              <dd class="features__description">Уровень самоотдачи</dd>
-              <dt class="features__value">100<sup>%</sup></dt>
-              <dd class="features__description">Соблюдение сроков</dd>
-              <dt class="features__value">50<sup>%</sup></dt>
-              <dd class="features__description">Минимальная предоплата</dd>
+              <div class="features__item">
+                <dt class="features__value">146<sup>%</sup></dt>
+                <dd class="features__description">Уровень самоотдачи</dd>
+              </div>
+              <div class="features__item">
+                <dt class="features__value">100<sup>%</sup></dt>
+                <dd class="features__description">Соблюдение сроков</dd>
+              </div>
+              <div class="features__item">
+                <dt class="features__value">50<sup>%</sup></dt>
+                <dd class="features__description">Минимальная предоплата</dd>
+              </div>
             </dl>
           </section>
         </div>
@@ -193,10 +199,10 @@
         <h2>Напишите нам</h2>
         <button class="button modal-close" type="button" aria-label="закрыть окно"></button>
       </header>
-      <form method="post" class="modal-question__form">
+      <form class="modal-question__form"  method="post" action="https://echo.htmlacademy.ru/">
         <div class="modal-question__item">
           <label for="modal-question__user-name">Ваше имя:</label>
-          <input id="modal-question__user-name" type="text" name="modal-question__user-name" placeholder="Имя Фамилия">
+          <input id="modal-question__user-name" type="text" name="modal-question__user-name"  pattern="([аА-яЯ]{2,})+(\s[аА-яЯ]{2,})" placeholder="Имя Фамилия">
         </div>
         <div class="modal-question__item">
           <label for="modal-question__user-email">Ваш email:</label>
@@ -204,7 +210,7 @@
         </div>
         <div class="modal-question__item modal-question__item--big">
           <label for="modal-question__user-question">Текст письма:</label>
-          <textarea id="modal-question__user-question" placeholder="В свободной форме"></textarea>
+          <textarea id="modal-question__user-question" name="modal-question__user-question" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button button--aссented modal-question__button" type="submit">Отправить</button>
       </form>
