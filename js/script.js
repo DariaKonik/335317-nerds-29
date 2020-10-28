@@ -4,11 +4,28 @@ const modalClose = modalQuestion.querySelector(".modal-close");
 const questionForm = modalQuestion.querySelector(".modal-question__form");
 const nameInput = modalQuestion.querySelector(".modal-question__user-name");
 const emailInput = modalQuestion.querySelector(".modal-question__user-email");
+const questionInput = modalQuestion.querySelector(".modal-question__question");
 
+let isStorageSupport = true;
+let storedName = "";
+let storedEmail = "";
+
+try {
+  storedName = localStorage.getItem("name");
+  storedEmail = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 buttonContacts.addEventListener("click", function(evt) {
   modalQuestion.classList.add("modal-show");
-  nameInput.focus();
+  if (isStorageSupport) {
+    emailInput.value = storedEmail;
+    nameInput.value = storedName;
+    questionInput.focus();
+  } else {
+   nameInput.focus();
+ }
 });
 
 modalClose.addEventListener("click", function(evt) {
@@ -28,10 +45,17 @@ window.addEventListener("keydown", function(evt) {
 });
 
 questionForm.addEventListener("submit", function(evt) {
-  if (!nameInput.value || !emailInput.value) {
+  if (!nameInput.value || !emailInput.value)
+  {
     evt.preventDefault();
     modalQuestion.classList.remove("modal-error");
     modalQuestion.offsetWidth = modalQuestion.offsetWidth;
     modalQuestion.classList.add("modal-error");
+  } else {
+    if (isStorageSupport)
+    {
+      localStorage.setItem("name", nameInput.value);
+      localStorage.setItem("email", emailInput.value);
+    }
   }
 });
