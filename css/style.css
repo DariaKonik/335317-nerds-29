@@ -702,7 +702,7 @@ img {
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*grid-template-rows: repeat(auto-fill, 620px);*/
+  grid-template-rows: repeat(auto-fill, 620px);
   column-gap: 42px;
   row-gap: 30px;
   margin: 0;
@@ -715,7 +715,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*height: 620px;*/
+  *height: 620px;
   background-color: var(--background-image-color);
   border-radius: 5px;
 }
@@ -812,43 +812,47 @@ img {
 
 .catalog__item-description {
   position: absolute;
-  top: 389px;
+  bottom: 0;
   display: none;
   width: 100%;
-  /*height: 231px;*/
+  min-height: 231px;
+  max-height: 400px;
+  padding: 26px 10px;
   line-height: 18px;
   text-align: center;
   color: var(--basic-medium-grey);
   background-color: var(--basic-light-grey);
   border-radius: 0 0 5px 5px;
-}
-
-.catalog__item-description h3 {
-  margin-top: 26px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-
-.catalog__item-description p {
-  margin: 0 auto 33px;
-  width: 255px;
-  /*overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;*/
+  box-sizing: border-box;
 }
 
 .catalog__item-description--active {
   display: block;
 }
 
+.catalog__item-description h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.catalog__item-description p {
+  margin: 0 auto 23px;
+  padding-bottom: 10px;
+  width: 255px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
 .link-to-project {
-  display: inline-block;
-  max-height: 3em;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
-  overflow: hidden;
+  text-transform: uppercase;
 }
 
 .link-to-project:hover,
@@ -1249,9 +1253,6 @@ img {
 .button-add-to-cart {
   width: 200px;
   padding: 17px 54px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .button-add-to-cart:active {

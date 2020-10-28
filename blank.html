@@ -80,4 +80,25 @@
         </div>
       </section>
     </footer>
+    <section class="modal modal-question">
+      <header class="modal-header">
+        <h2>Напишите нам</h2>
+        <button class="button modal-close" type="button" aria-label="закрыть окно с формой отправки вопроса"></button>
+      </header>
+      <form class="modal-question__form"  method="post" action="https://echo.htmlacademy.ru/">
+        <div class="modal-question__item">
+          <label for="modal-question__user-name">Ваше имя:</label>
+          <input id="modal-question__user-name" type="text" name="modal-question__user-name" pattern="([аА-яЯ]{2,})+(\s[аА-яЯ]{2,})" placeholder="Имя Фамилия" aria-invalid="true">
+        </div>
+        <div class="modal-question__item">
+          <label for="modal-question__user-email">Ваш email:</label>
+          <input id="modal-question__user-email" type="email" name="modal-question__user-email" placeholder="email@example.com" aria-invalid="true">
+        </div>
+        <div class="modal-question__item modal-question__item--big">
+          <label for="modal-question__user-question">Текст письма:</label>
+          <textarea id="modal-question__user-question" name="modal-question__user-question" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button--aссented modal-question__button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
