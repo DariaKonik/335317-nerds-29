@@ -17,7 +17,12 @@ try {
   isStorageSupport = false;
 }
 
-buttonContacts.addEventListener("click", function(evt) {
+function hideModal() {
+  modalQuestion.classList.remove("modal-show");
+  modalQuestion.classList.remove("modal-error");
+}
+
+buttonContacts.addEventListener("click", function() {
   modalQuestion.classList.add("modal-show");
   if (isStorageSupport) {
     emailInput.value = storedEmail;
@@ -28,9 +33,8 @@ buttonContacts.addEventListener("click", function(evt) {
  }
 });
 
-modalClose.addEventListener("click", function(evt) {
-  modalQuestion.classList.remove("modal-show");
-  modalQuestion.classList.remove("modal-error");
+modalClose.addEventListener("click", function() {
+  hideModal();
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -38,8 +42,7 @@ window.addEventListener("keydown", function(evt) {
   {
     if(modalQuestion.classList.contains("modal-show")) {
       evt.preventDefault();
-      modalQuestion.classList.remove("modal-show");
-      modalQuestion.classList.remove("modal-error");
+      hideModal();
     }
   }
 });

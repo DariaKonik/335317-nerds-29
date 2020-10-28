@@ -1328,7 +1328,7 @@ img {
 
 .modal {
   position: fixed;
-  top: 200px;
+  top: calc(50%-345px);
   bottom: 0;
   left: 0;
   right: 0;
