@@ -74,6 +74,10 @@ img {
   height: auto;
 }
 
+iframe {
+  border: none;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
