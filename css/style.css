@@ -573,15 +573,18 @@ iframe.contacts__map {
   display: none;
 }
 
-.map-container {
+.map-marker-container {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .map-marker {
   position: absolute;
-  top: -315px;
+  top: -335px;
   bottom: 0;
-  left: 58.5%;
+  left: 57.5%;
   right: 0;
   z-index: 1;
 }
