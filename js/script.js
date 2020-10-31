@@ -13,6 +13,9 @@ const firstSlide = promoSection.querySelector(".slider__item:first-child");
 const secondSlide = promoSection.querySelector(".slider__item:nth-child(2)");
 const thirdSlide = promoSection.querySelector(".slider__item:nth-child(3)");
 const sliderWrapper = document.querySelector(".first-section-wrapper");
+const mapOffice = document.querySelector("iframe.contacts__map");
+
+mapOffice.style.display = "block";
 
 let isStorageSupport = true;
 let storedName = "";
@@ -30,7 +33,8 @@ function hideModal() {
   modalQuestion.classList.remove("modal-error");
 }
 
-buttonContacts.addEventListener("click", function() {
+buttonContacts.addEventListener("click", function(evt) {
+  evt.preventDefault();
   modalQuestion.classList.add("modal-show");
   if (isStorageSupport) {
     emailInput.value = storedEmail;

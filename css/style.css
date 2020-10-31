@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto.woff2) format("woff2"), url(../fonts/roboto.woff) format("woff"), url(../fonts/robotobold.woff2) format("woff2"), url(../fonts/robotobold.woff) format("woff"), url(../fonts/robotomedium.woff2) format("woff2"), url(../fonts/robotomedium.woff) format("woff");
+   src:  url(../fonts/roboto.woff2) format("woff2"),
+        url(../fonts/roboto.woff) format("woff"),
+        url(../fonts/robotobold.woff2) format("woff2"),
+        url(../fonts/robotobold.woff) format("woff"),
+        url(../fonts/robotomedium.woff2) format("woff2"),
+        url(../fonts/robotomedium.woff) format("woff");
 }
 
 :root {
@@ -13,6 +18,7 @@
   /*дополнительные цвета текст*/
   --basic-medium-black: #444444;
   --basic-medium-grey: #666666;
+  --special-opacity-light-black: rgba(0, 0, 0, 0.15);
   --special-opacity-black: rgba(0, 0, 0, 0.3);
   --special-opacity-black-darker: rgba(0, 0, 0, 0.6);
   --special-opacity-white: rgba(255, 255, 255, 0.3);
@@ -40,6 +46,7 @@
   --special-button-slider-grey: #C1C1C1;
   --background-image-color: #F2F2F2;
   --button-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  --catalog-item-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   --modal-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -559,6 +566,24 @@ iframe {
   width: 100%;
   max-height: 416px;
   object-fit: cover;
+  object-position: 0 65%;
+}
+
+iframe.contacts__map {
+  display: none;
+}
+
+.map-container {
+  position: relative;
+}
+
+.map-marker {
+  position: absolute;
+  top: -315px;
+  bottom: 0;
+  left: 58.5%;
+  right: 0;
+  z-index: 1;
 }
 
 .contacts__text-frame {
@@ -573,6 +598,7 @@ iframe {
   background-color: var(--basic-white);
   overflow-y: auto;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .contacts__studio-name {
@@ -664,7 +690,7 @@ iframe {
 
 .social__item:active {
   background-color: var(--special-dark-red);
-  box-shadow: var(--button-shadow);
+  /*!!!*/box-shadow: var(--button-shadow);
 }
 
 .social__item:active .social__icon {
@@ -716,7 +742,7 @@ iframe {
 
 .catalog__item:hover,
 .catalog__item:focus {
-  box-shadow: var(--button-shadow);
+  box-shadow: var(--catalog-item-shadow);
 }
 
 .pagination {
@@ -1053,7 +1079,7 @@ iframe {
   border-radius: 50%;
   box-shadow:
     inset 0px 0px 0px 8px var(--basic-white),
-    0px 2px 1px rgba(0, 0, 0, 0.15);
+    0px 2px 1px var(--special-opacity-light-black);
   cursor: pointer;
 }
 
@@ -1132,6 +1158,10 @@ iframe {
   cursor: auto;
 }
 
+.button:active:not(.slider-controls__button) {
+  box-shadow: var(--button-shadow);
+}
+
 .button-standart {
   padding: 16px 54px 16px;
   background-color: var(--basic-light-grey);
@@ -1148,7 +1178,6 @@ iframe {
 .pagination__button:active {
   color: var(--special-opacity-black);
   background-color: var(--special-dark-grey);
-  box-shadow: var(--button-shadow);
 }
 
 .button--aссented {
@@ -1164,7 +1193,6 @@ iframe {
 .button--aссented:active {
   background-color: var(--special-dark-red);
   color: var(--special-opacity-white);
-  box-shadow: var(--button-shadow);
 }
 
 .button-contacts {
@@ -1188,7 +1216,6 @@ iframe {
 
 .button-order--red:active {
   background-color: var(--special-dark-red);
-  color: var(--special-opacity-white);
 }
 
 .button-order--yellow {
@@ -1202,7 +1229,6 @@ iframe {
 
 .button-order--yellow:active {
   background-color: var(--special-dark-yellow);
-  box-shadow: var(--button-shadow);
 }
 
 .button-order--green {
@@ -1216,7 +1242,6 @@ iframe {
 
 .button-order--green:active {
   background-color: var(--special-dark-green);
-  box-shadow: var(--button-shadow);
 }
 
 .button-order:active {
@@ -1259,6 +1284,10 @@ iframe {
   color: var(--basic-black);
   background-color: var(--basic-white);
   opacity: 0.3;
+}
+
+.sort-button-container .button:active {
+  box-shadow: none;
 }
 
 .sort-button:hover,
