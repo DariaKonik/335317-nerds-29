@@ -13,7 +13,6 @@ const thirdSliderButton = promoSection?.querySelector(".slider-controls__button:
 const firstSlide = promoSection?.querySelector(".slider__item:first-child");
 const secondSlide = promoSection?.querySelector(".slider__item:nth-child(2)");
 const thirdSlide = promoSection?.querySelector(".slider__item:nth-child(3)");
-const sliderWrapper = document.querySelector(".first-section-wrapper");
 
 mapOffice.style.display = "block";
 
@@ -108,9 +107,6 @@ if (secondSliderButton!=null) {
   secondSliderButton.addEventListener("click", function() {
     removeActiveClass();
     secondSlide.classList.add("slider__item--current");
-    sliderWrapper.classList.remove("promo-wrapper-1");
-    sliderWrapper.classList.remove("promo-wrapper-3");
-    sliderWrapper.classList.add("promo-wrapper-2");
     secondSliderButton.classList.add("slider-controls__button--active");
     });
 };
@@ -119,9 +115,6 @@ if (firstSliderButton!=null) {
   firstSliderButton.addEventListener("click", function () {
     removeActiveClass();
     firstSlide.classList.add("slider__item--current");
-    sliderWrapper.classList.remove("promo-wrapper-2");
-    sliderWrapper.classList.remove("promo-wrapper-3");
-    sliderWrapper.classList.add("promo-wrapper-1");
     firstSliderButton.classList.add("slider-controls__button--active");
   });
 };
@@ -130,9 +123,6 @@ if (thirdSliderButton!=null) {
   thirdSliderButton.addEventListener("click", function () {
     removeActiveClass();
     thirdSlide.classList.add("slider__item--current");
-    sliderWrapper.classList.remove("promo-wrapper-1");
-    sliderWrapper.classList.remove("promo-wrapper-2");
-    sliderWrapper.classList.add("promo-wrapper-3");
     thirdSliderButton.classList.add("slider-controls__button--active");
   });
 };
