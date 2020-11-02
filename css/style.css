@@ -852,10 +852,6 @@ iframe.contacts__map {
   display: block;
 }
 
-.catalog__item-description--active {
-  display: block;
-}
-
 .catalog__item-description h3 {
   margin-top: 0;
   margin-bottom: 12px;
