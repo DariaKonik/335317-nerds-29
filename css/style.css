@@ -593,7 +593,7 @@ iframe.contacts__map {
   display: flex;
   flex-direction: column;
   width: 321px;
-  height: 308px;
+  max-height: 350px;
   padding: 49px 50px 45px;
   background-color: var(--basic-white);
   overflow-y: auto;
@@ -743,6 +743,7 @@ iframe.contacts__map {
 .catalog__item:hover,
 .catalog__item:focus {
   box-shadow: var(--catalog-item-shadow);
+  cursor: pointer
 }
 
 .pagination {
@@ -846,6 +847,11 @@ iframe.contacts__map {
   box-sizing: border-box;
 }
 
+.catalog__item:hover>.catalog__item-description,
+.catalog__item:focus>.catalog__item-description {
+  display: block;
+}
+
 .catalog__item-description--active {
   display: block;
 }
@@ -863,6 +869,7 @@ iframe.contacts__map {
   margin: 0 auto 23px;
   padding-bottom: 10px;
   width: 255px;
+  max-height: 250px;
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -1106,7 +1113,7 @@ iframe.contacts__map {
   font-weight: inherit;
   font-size: inherit;
   line-height: 22px;
-  font-family: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   color: inherit;
   text-align: center;
   border: none;
@@ -1163,7 +1170,7 @@ iframe.contacts__map {
 }
 
 .button-standart {
-  padding: 16px 5px 16px;
+  padding: 17px 54px 15px;
   background-color: var(--basic-light-grey);
 }
 
@@ -1197,6 +1204,7 @@ iframe.contacts__map {
 
 .button-contacts {
   padding: 17px 44px 15px;
+  width: 219px;
 }
 
 .button-order {
@@ -1324,7 +1332,7 @@ iframe.contacts__map {
 .pagination__button {
   min-width: 50px;
   min-height: 50px;
-  padding: 12px 12px 12px 12px;
+  padding: 12px;
   background-color: var(--basic-light-grey);
 }
 
@@ -1352,13 +1360,14 @@ iframe.contacts__map {
 
 .modal {
   position: fixed;
-  top: calc(50%-345px);
-  bottom: 0;
+  top: calc((100% - 345px)/2);
+  bottom: calc((100% - 345px)/2);
   left: 0;
   right: 0;
   display: none;
   margin: auto;
   box-shadow: var(--modal-shadow);
+  z-index: 100;
 }
 
 .modal-show {
@@ -1471,7 +1480,7 @@ iframe.contacts__map {
 }
 
 .modal input:invalid,
-.modal textarea:invalid {
+input.invalid {
   border: 2px solid var(--special-medium-red);
 }
 

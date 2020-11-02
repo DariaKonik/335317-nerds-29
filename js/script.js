@@ -66,3 +66,24 @@ questionForm.addEventListener("submit", function(evt) {
     }
   }
 });
+
+
+questionForm.addEventListener("submit", function() {
+   if (!nameInput.value)
+   {
+    nameInput.classList.add("invalid");
+    nameInput.addEventListener("focus", function() {
+     nameInput.classList.remove("invalid");
+   }, {once: true});
+   }
+ });
+
+questionForm.addEventListener("submit", function() {
+   if (!emailInput.value)
+   {
+    emailInput.classList.add("invalid");
+    emailInput.addEventListener("focus", function() {
+    emailInput.classList.remove("invalid");
+   }, {once: true});
+   }
+ });
