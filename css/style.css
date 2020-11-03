@@ -244,18 +244,21 @@ iframe {
 
 .slide-1 {
   background-image: url("../img/nerds-index-slide1.png");
+  background-color: var(--basic-light-grey);
   background-repeat: no-repeat;
   background-position: 99% -3px;
 }
 
 .slide-2 {
   background-image: url("../img/nerds-index-slide2.png");
+  background-color: var(--basic-light-grey);
   background-repeat: no-repeat;
   background-position: 99% -3px;
 }
 
 .slide-3 {
   background-image: url("../img/nerds-index-slide3.png");
+  background-color: var(--basic-light-grey);
   background-repeat: no-repeat;
   background-position: 99% -3px;
 }
@@ -736,7 +739,7 @@ iframe.contacts__map {
   position: relative;
   display: flex;
   flex-direction: column;
-  *height: 620px;
+  height: 620px;
   background-color: var(--background-image-color);
   border-radius: 5px;
 }
