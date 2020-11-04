@@ -1268,15 +1268,21 @@ iframe.contacts__map {
 .slider-controls__button {
   width: 18px;
   height: 18px;
+  padding: 0;
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-white);
   border-radius: 50%;
+}
+
+.slider-controls__button:hover,
+.slider-controls__button:focus {
+  outline: initial;
+  outline-style: auto;
 }
 
 .slider-controls__button--active {
   box-shadow:
-    inset 0px 0px 0px 3px var(--basic-white),
-    inset 0px 0px 0px 5px var(--special-button-slider-grey);
+    inset 0px 0px 0px 5px var(--basic-white),
+    inset 0px 0px 0px 7px var(--special-button-slider-grey);
 }
 
 /*catalog button*/
