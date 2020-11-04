@@ -19,6 +19,7 @@
   --basic-medium-black: #444444;
   --basic-medium-grey: #666666;
   --special-opacity-light-black: rgba(0, 0, 0, 0.15);
+  --special-opacity-super-light-black: rgba(0, 0, 0, 0.1);
   --special-opacity-black: rgba(0, 0, 0, 0.3);
   --special-opacity-black-darker: rgba(0, 0, 0, 0.6);
   --special-opacity-white: rgba(255, 255, 255, 0.3);
@@ -86,7 +87,7 @@ iframe {
 }
 
 .main-title {
-  margin-top: -2px;
+  margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 110px;
   font-weight: 500;
@@ -320,6 +321,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 88px;
+  height: auto;
 }
 
 
@@ -705,7 +707,7 @@ iframe.contacts__map {
 
 .catalog-main-title {
   margin-bottom: 48px;
-  padding-top: 75px;
+  padding-top: 72px;
   text-align: center;
 }
 
@@ -727,7 +729,7 @@ iframe.contacts__map {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(auto-fill, 620px);
-  column-gap: 42px;
+  column-gap: 40px;
   row-gap: 30px;
   margin: 0;
   padding: 0;
@@ -750,13 +752,8 @@ iframe.contacts__map {
   cursor: pointer
 }
 
-.pagination {
-  grid-column-start: 2;
-  display: flex;
-  align-items: center;
-}
-
 .pagination__list {
+  grid-column-start: 2;
   display: flex;
   align-items: center;
   margin: 0;
@@ -831,8 +828,16 @@ iframe.contacts__map {
 
 .catalog__item-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: 50% 0;
+  object-position: left top;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.catalog__item-image:hover,
+.catalog__item-image:focus {
+  border: none;
 }
 
 .catalog__item-description {
@@ -1005,7 +1010,7 @@ iframe.contacts__map {
   left: -35px;
   width: 23px;
   height: 23px;
-  border: 3px solid var(--basic-catalog-grey);
+  border: 2px solid var(--basic-catalog-grey);
   border-radius: 3px;
   box-sizing: border-box;
   opacity: 0.4;
@@ -1270,10 +1275,9 @@ iframe.contacts__map {
 
 .slider-controls__button--active {
   box-shadow:
-    inset 0px 0px 0px 5px var(--basic-white),
-    inset 0px 0px 0px 7px var(--special-button-slider-grey);
+    inset 0px 0px 0px 3px var(--basic-white),
+    inset 0px 0px 0px 5px var(--special-button-slider-grey);
 }
-
 
 /*catalog button*/
 
