@@ -562,7 +562,7 @@ iframe {
 
 .contacts {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   line-height: 18px;
   color: var(--basic-medium-grey);
 }
@@ -619,7 +619,7 @@ iframe.contacts__map {
 }
 
 .contact-phone {
-  margin: 0 0 40px;
+  margin: 0 0 38px;
   color: var(--basic-medium-grey);
 }
 
@@ -645,14 +645,6 @@ iframe.contacts__map {
   list-style: none;
 }
 
-.social__item {
-  margin-right: 10px;
-}
-
-.social__item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .footer-bottom h3 {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -671,17 +663,22 @@ iframe.contacts__map {
 /*Social links*/
 
 .social__item {
-  width: 80px;
-  height: 80px;
+  width: 79px;
+  height: 79px;
+  margin-right: 11px;
   background-color: var(--basic-social-grey);
   border-radius: 50%;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .social__link {
   display: block;
   margin-top: 10px;
   text-align: center;
-  padding: 18px 18px;
+  padding: 20px 20px;
 }
 
 .social__icon {
@@ -695,7 +692,7 @@ iframe.contacts__map {
 
 .social__item:active {
   background-color: var(--special-dark-red);
-  /*!!!*/box-shadow: var(--button-shadow);
+  box-shadow: var(--button-shadow);
 }
 
 .social__item:active .social__icon {
@@ -941,7 +938,7 @@ iframe.contacts__map {
 }
 
 .catalog-filter__first-title {
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   padding-top: 7px;
 }
 
@@ -1010,9 +1007,10 @@ iframe.contacts__map {
   left: -35px;
   width: 23px;
   height: 23px;
-  border: 2px solid var(--basic-catalog-grey);
-  border-radius: 3px;
-  box-sizing: border-box;
+  background-color: var(--basic-white);
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.4;
 }
 
@@ -1208,7 +1206,7 @@ iframe.contacts__map {
 }
 
 .button-contacts {
-  padding: 17px 44px 15px;
+  padding: 16px 44px 16px;
   width: 219px;
 }
 
