@@ -306,7 +306,7 @@ iframe {
 
 .slide__text--wide-space {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .promo.container {
@@ -370,7 +370,7 @@ iframe {
   width: 260px;
   margin-top: 0;
   margin-bottom: auto;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 }
 
 
@@ -431,6 +431,7 @@ iframe {
 .studio h4 {
   margin-top: 0;
   margin-bottom: 23px;
+  padding-top: 2px;
   text-transform: uppercase;
 }
 
@@ -1211,7 +1212,7 @@ iframe.contacts__map {
 }
 
 .button-order {
-  padding: 17px 39px 17px 40px;
+  padding: 17px 39px 15px 40px;
   width: 160px;
   color: var(--basic-white);
 }
