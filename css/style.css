@@ -1278,6 +1278,11 @@ iframe.contacts__map {
   outline-style: auto;
 }
 
+.slider-controls__button:active {
+  background-color: var(--background-image-color);
+  box-shadow: none;
+}
+
 .slider-controls__button--active {
   box-shadow:
     inset 0px 0px 0px 5px var(--basic-white),
